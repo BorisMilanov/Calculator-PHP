@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="" method="get">
+        <label for="number">First number...</label>
+        <input type="number" name="numOne" id="firstNum">
+        <label for="number">Second number..</label>
+        <input type="number" name="numTwo" id="secondNum">
+        <input type="submit">
+    </form>   
 </body>
 </html>
