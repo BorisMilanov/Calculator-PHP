@@ -6,12 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="get">
+    <form action="./arithmetic/simpleCalculation.php" method="post">
         <label for="number">First number...</label>
-        <input type="number" name="numOne" id="firstNum">
+        <input type="text" name="num01" id="firstNum">
         <label for="number">Second number..</label>
-        <input type="number" name="numTwo" id="secondNum">
-        <input type="submit">
+        <input type="text" name="numTwo" id="secondNum">
+        <input type="submit">       
     </form>   
 </body>
 </html>
