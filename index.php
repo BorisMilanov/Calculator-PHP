@@ -8,10 +8,13 @@
 <body>
     <form action="./arithmetic/simpleCalculation.php" method="post">
         <label for="number">First number...</label>
-        <input type="text" name="num01" id="firstNum">
+        <input type="text" name="numOne" id="firstNum">
         <label for="number">Second number..</label>
         <input type="text" name="numTwo" id="secondNum">
-        <input type="submit">       
-    </form>   
+        <input type="submit" value="+" name="plus">       
+        <input type="submit" value="-" name="minus">       
+        <input type="submit" value="/" name="divide">       
+        <input type="submit" value="*" name="multiplication">       
+    </form>     
 </body>
 </html>
