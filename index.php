@@ -10,9 +10,9 @@
 <body>
    <div class="card">
    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-        <label for="number">First number...</label>
+        <label for="number" id="firstLabel">First number...</label>
         <input type="text" name="numOne" id="firstNum">
-        <label for="number">Second number..</label>
+        <label for="number" id="secondLabel">Second number..</label>
         <input type="text" name="numTwo" id="secondNum">
         <select name="operator" id="">
             <option value="plus">+</option>
@@ -20,7 +20,7 @@
             <option value="divide">/</option>
             <option value="mulplication">*</option>
         </select>
-        <button submit>calculate</button>
+        <button>calculate</button>
     </form>
 </div>
 
