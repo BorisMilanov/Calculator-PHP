@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
+<link rel="stylesheet" href="style.css">
 <body>
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+   <div class="card">
+   <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
         <label for="number">First number...</label>
         <input type="text" name="numOne" id="firstNum">
         <label for="number">Second number..</label>
@@ -21,6 +22,9 @@
         </select>
         <button submit>calculate</button>
     </form>
+</div>
+
+<a href="https://mythrillfiction.com/" target="_blank"> </a>
     <?php
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
