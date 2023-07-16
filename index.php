@@ -13,10 +13,13 @@
         <input type="text" name="numOne" id="firstNum">
         <label for="number">Second number..</label>
         <input type="text" name="numTwo" id="secondNum">
-        <input type="submit" value="+" name="plus">
-        <input type="submit" value="-" name="minus">
-        <input type="submit" value="/" name="divide">
-        <input type="submit" value="*" name="multiplication">
+        <select name="operator" id="">
+            <option value="plus">+</option>
+            <option value="minus">-</option>
+            <option value="divide">/</option>
+            <option value="mulplication">*</option>
+        </select>
+        <button submit>calculate</button>
     </form>
     <?php
 
@@ -24,15 +27,23 @@
         $result = 0;
         $numOne = filter_input(INPUT_POST, $_POST["numOne"], FILTER_SANITIZE_NUMBER_FLOAT);
         $numTwo = filter_input(INPUT_POST, $_POST["numTwo"], FILTER_SANITIZE_NUMBER_FLOAT);
-        $operatorPlus = ($_POST["plus"]);
-        if (isset($_POST['numOne'])) {
+        $operator = ($_POST["operator"]);
+
+        if (isset($_POST['numOne']) && isset($_POST['numTwo'])) {
             $numOneValue = $_POST['numOne'];
             $numTwoValue = $_POST['numTwo'];
-
-            if ($operatorPlus) {
+            if ($operator == "minus") {
+                $result = $numOneValue - $numTwoValue;
+            }
+            if ($operator == "plus") {
                 $result = $numOneValue + $numTwoValue;
-            } else {
-                echo "myField is not set in the POST data.";
+            }
+            if ($operator == "divide") {
+                $result = $numOneValue / $numTwoValue;
+
+            }
+            if ($operator == "mulplication") {
+                $result = $numOneValue * $numTwoValue;
             }
         }
         echo $result;
