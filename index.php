@@ -53,7 +53,7 @@
                 $result = $numOneValue * $numTwoValue;
             }
         }
-        echo $result;
+        echo "<p class='result'>{$result}</p>";
     }
     ?>
 </body>

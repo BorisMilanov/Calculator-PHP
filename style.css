@@ -161,4 +161,10 @@ button {
     border: none;
     width: 300px;
     text-align: center;
+    background-color: #0095ff;
+}
+
+.result {
+    font-size: 120px;
+    color: #fff;
 }
