@@ -117,7 +117,7 @@ a {
     width: 370px;
 }
 
-#firstLabel {
+#secondLabel {
     margin-right: 5px;
     width: 370px;
 }
@@ -146,4 +146,19 @@ button {
     touch-action: manipulation;
     vertical-align: baseline;
     white-space: nowrap;
+}
+
+.select-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: none;
+    height: 20px;
+    padding: 30px 30px;
+}
+
+.select-box {
+    border: none;
+    width: 300px;
+    text-align: center;
 }

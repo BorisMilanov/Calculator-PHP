@@ -7,24 +7,27 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="style.css">
-<body>
-   <div class="card">
-   <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-        <label for="number" id="firstLabel">First number...</label>
-        <input type="text" name="numOne" id="firstNum">
-        <label for="number" id="secondLabel">Second number..</label>
-        <input type="text" name="numTwo" id="secondNum">
-        <select name="operator" id="">
-            <option value="plus">+</option>
-            <option value="minus">-</option>
-            <option value="divide">/</option>
-            <option value="mulplication">*</option>
-        </select>
-        <button>calculate</button>
-    </form>
-</div>
 
-<a href="https://mythrillfiction.com/" target="_blank"> </a>
+<body>
+    <div class="card">
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+            <label for="number" id="firstLabel">First number...</label>
+            <input type="text" name="numOne" id="firstNum">
+            <label for="number" id="secondLabel">Second number..</label>
+            <input type="text" name="numTwo" id="secondNum">
+            <div class="select-container">
+                <select name="operator" class="select-box">
+                    <option value="plus">+</option>
+                    <option value="minus">-</option>
+                    <option value="divide">/</option>
+                    <option value="mulplication">*</option>
+                </select>
+            </div>
+            <button>calculate</button>
+        </form>
+    </div>
+
+    <a href="https://mythrillfiction.com/" target="_blank"> </a>
     <?php
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
