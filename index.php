@@ -12,9 +12,9 @@
     <div class="card">
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
             <label for="number" id="firstLabel">First number...</label>
-            <input type="text" name="numOne" id="firstNum">
+            <input type="text" name="numOne" id="firstNum" required>
             <label for="number" id="secondLabel">Second number..</label>
-            <input type="text" name="numTwo" id="secondNum">
+            <input type="text" name="numTwo" id="secondNum" required>
             <div class="select-container">
                 <select name="operator" class="select-box">
                     <option value="plus">+</option>
