@@ -39,6 +39,11 @@
         if (isset($_POST['numOne']) && isset($_POST['numTwo'])) {
             $numOneValue = $_POST['numOne'];
             $numTwoValue = $_POST['numTwo'];
+            $errors = false;
+            if (!is_numeric($numOneValue) || !is_numeric($numTwoValue)) {
+                echo "<p class='error'>Only write numbers!</p>";
+                $errors = true;
+            }
             if ($operator == "minus") {
                 $result = $numOneValue - $numTwoValue;
             }
@@ -52,7 +57,9 @@
             if ($operator == "mulplication") {
                 $result = $numOneValue * $numTwoValue;
             }
+           
         }
+       
         echo "<p class='result'>{$result}</p>";
     }
     ?>
